@@ -19,6 +19,21 @@ $(document).ready(function () {
         ost = cOst;
     }); $('[data-toggle="tooltip"]').tooltip(); Waves.init(); Waves.attach('.flat-buttons', ['waves-button']); Waves.attach('.float-buttons', ['waves-button', 'waves-float']); Waves.attach('.float-button-light', ['waves-button', 'waves-float', 'waves-light']); $('.counter').counterUp({ delay: 10, time: 400 }); if ($('.cd-stretchy-nav').length > 0) { var stretchyNavs = $('.cd-stretchy-nav'); stretchyNavs.each(function () { var stretchyNav = $(this), stretchyNavTrigger = stretchyNav.find('.cd-nav-trigger'); stretchyNavTrigger.on('click', function (event) { event.preventDefault(); stretchyNav.toggleClass('nav-is-visible'); }); }); $(document).on('click', function (event) { (!$(event.target).is('.cd-nav-trigger') && !$(event.target).is('.cd-nav-trigger span')) && stretchyNavs.removeClass('nav-is-visible'); }); }
     $(".fa-bar-hide").click(function () { $(".fa-bars").fadeOut("slow"); }); $(".fa-bar-show").click(function () { $(".fa-bars").fadeIn("slow"); }); $(".fa-search").click(function () { $(".search-box").show(500); }); $(".search-close").click(function () { $(".search-box").hide(500); }); var navBodyScroll = $('.nav-body .overflow'); $(window).load(function () { navBodyScroll.height($(window).height() - $('.nav-head').height() - 45); navBodyScroll.mCustomScrollbar({ theme: "dark-thick", scrollInertia: 300 }); }); $(window).resize(function () { navBodyScroll.height($(window).height() - $('.nav-head').height() - 45); }); /*var map; map = new GMaps({ el: '#map', lat: 21.2334329, lng: 72.86372, scrollwheel: false }); map.addMarker({ lat: 21.2334329, lng: 72.86372, title: 'Marker with InfoWindow', infoWindow: { content: '<p>Phoenix app landing page <br/> Buy Now at <a href="">Themeforest</a></p>' } });*/ $('.form-switch a').click(function (e) { var form = $(this).attr('href'); e.preventDefault(); $(form + '> a').click(); }); $('[data-modal-form="sign-in"]').click(function () { $('#form-2 a').click(); }); $('[data-modal-form="sign-up"]').click(function () { $('#form-1 a').click(); });
+
+    $('#provider-search').keyup((event) => {
+        if (event.which === 13) {
+            const query = event.target.value;
+
+            if (query) {
+                window.location.href = `http://127.0.0.1:8080/?q=${query}`;
+            } else {
+                $('#search-wrap').addClass('shakeX');
+                document.getElementById('search-wrap').addEventListener('animationend', () => {
+                    $('#search-wrap').removeClass('shakeX');
+                });
+            }
+        }
+    })
 }); 
 
 

@@ -3171,3 +3171,53 @@ footer a:hover{
 }
 }
 
+.form-group-search {
+    max-width: 508px;
+    margin-inline: auto;
+    margin-block-start: 24px;
+}
+
+.form-group-search > .form-control {
+    height: 45px;
+}
+
+.animated {
+    --animate-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: var(--animate-duration);
+    animation-duration: var(--animate-duration);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes shakeX {
+
+    from,
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+.shakeX {
+    -webkit-animation-name: shakeX;
+    animation-name: shakeX;
+}
