@@ -25,7 +25,7 @@ $(document).ready(function () {
             const query = event.target.value;
 
             if (query) {
-                window.location.href = `http://127.0.0.1:8080/?q=${query}`;
+                window.location.href = `https://trenditapp.com/booking/?q=${query}`;
             } else {
                 $('#search-wrap').addClass('shakeX');
                 document.getElementById('search-wrap').addEventListener('animationend', () => {
