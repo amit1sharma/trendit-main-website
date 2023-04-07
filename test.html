@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Trendit App</title>
+
+
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="title" content="Trendit – ¬Book Beautician at Home, Salon Services">
+<meta name="description" content="Trendit offers powerful business tools for beauty and barber professionals, it gives clients an easy way to discover, and book services .">
+<meta name="keywords" content="makeup appointment, salon appointment, salon booking, salon at home, beauty parlor services at home, appointment salon, book beauty services, hair salon appointment booking app, hair stylist app, makeup appointment, salon appointment, salon bookings, salon locator, styleseat, barbershop software, beauty appointments, beauty services, home services, home expert, Household service, Service finder, Top home service app, salon at home, salon finder, hair 411 by the knot, hair master hd, salon locator, be u salons hair, supercuts, salon booking, affinity hair, hair salon appointment booking app, salon bookings, salon booking app, salon on the go, istashi, hair salon app, salon software, hairshow, salon appointment, Makup beauty service, makup video, makup videos, makup tips, beautition, makup advice app, salon booking app, free appointment scheduler, booking organizer, hair salon appointment booking app, appointment scheduler, salon booking, salon iris, management appointment organizer, saison manager, appointment checker, business appointment organizer, salon bookings, appointment booking app, salon bookings, salon booking app, salon booking, talabat, booking.com hotel reservations, booking com, hair stylist app, makeup appointment, salon appointment, salon locator, salon booking, home expert, salon at home, beauty parlour services at home, salon booking, salon finder, salon locator">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+    <link rel="shortcut icon" href="assets\images\favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets\images\favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="assets\css\bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets\css\font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets\css\jarallax.css">
+
+    <link rel="stylesheet" type="text/css" href="assets\css\owl.carousel.css">
+
+    <link rel="stylesheet" type="text/css" href="assets\css\magnific-popup.css">
+
+    <link rel="stylesheet" type="text/css" href="assets\css\jquery.mCustomScrollbar.css">
+
+    <link rel="stylesheet" type="text/css" href="assets\css\animate.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets\css\waves.css">
+
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+
+    <link rel="stylesheet" type="text/css" href="assets\css\responsive.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/colors.css" id="color">
+    
+    <style>
+        
+        .white-space-pre {
+    white-space: pre-wrap;
+    font-weight:400;
+    text-align:left;
+}
+
+    .circle-txt2 {
+    font-size: 16px;
+    font-weight: 600;
+    left: 0;
+    line-height: 40px;
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    width: 100%;
+    opacity: 1;
+    color:#ed1c24;
+    }
+
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    
+    <script src="assets\js\jquery.2.2.3.min.js"></script>
+    <script src="assets\js\bootstrap.min.js"></script>
+
+    <script src="assets\js\jarallax.min.js"></script>
+
+    <script src="assets\js\jquery.sidebar.min.js"></script>
+
+    <script src="assets\js\owl.carousel.min.js"></script>
+
+    <script src="assets\js\jquery.magnific-popup.min.js"></script>
+
+    <script src="assets\js\jquery.counterup.js"></script>
+
+    <script src="assets\js\waypoints.min.js"></script>
+
+    <script src="assets\js\mCustomScrollbar.min.js"></script>
+
+    <script src="assets\js\tweetie.min.js"></script>
+
+    <script src="assets\js\waves.min.js"></script>
+
+    <script src="assets\js\custom.js"></script>
+    <script src="assets\js\outdatedbrowser.js"></script>
+    <script>
+        // Plain Javascript
+        //event listener: DOM ready
+        function addLoadEvent(func) {
+            var oldonload = window.onload;
+            if (typeof window.onload != 'function') {
+                window.onload = func;
+            } else {
+                window.onload = function () {
+                    if (oldonload) {
+                        oldonload();
+                    }
+                    func();
+                }
+            }
+        }
+        //call plugin function after DOM ready
+        addLoadEvent(function () {
+            window.scrollTo(0, 0);
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'js:Promise',
+                languagePath: ''
+            })
+        });
+    </script>
+
+    <script>
+    
+    $(document).ready(function() {
+    $.ajax({
+        type: 'POST',
+        url: 'https://secureapp.trenditapp.com/trendit/trendit-api/p/A0013-1',
+        dataType: "json",
+        async:false,
+        data: {
+            Country: "Japan"
+        },
+        success: function(data) {
+            
+        }
+
+    });
+});
+
+    </script>
+</body>
+
+</html>

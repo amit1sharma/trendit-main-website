@@ -1,0 +1,2 @@
+[22-Apr-2020 14:45:39 UTC] PHP Warning:  Use of undefined constant post - assumed 'post' (this will throw an Error in a future version of PHP) in /mnt/volume_nyc3_01/cpusrtrendit/public_html/post/index.php on line 353
+[22-Apr-2020 14:45:39 UTC] PHP Warning:  Use of undefined constant updated_at - assumed 'updated_at' (this will throw an Error in a future version of PHP) in /mnt/volume_nyc3_01/cpusrtrendit/public_html/post/index.php on line 353

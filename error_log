@@ -1,0 +1,1 @@
+[19-Dec-2019 05:50:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /mnt/volume_nyc3_01/cpusrtrendit/public_html/form.php:369) in /mnt/volume_nyc3_01/cpusrtrendit/public_html/form.php on line 370
