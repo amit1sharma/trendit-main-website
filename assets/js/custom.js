@@ -1,3 +1,12 @@
+const hostname = window.location.hostname;
+
+let bookingHost = 'http://3.236.139.249:8080/web/';
+
+
+if (hostname.includes('trenditapp.com')) {
+    bookingHost = 'https://trenditapp.com/booking/';
+}
+
 $(document).ready(function () {
     function setHeight() {
         var $window = $(window); windowHeight = $(window).innerHeight(); if ($window.width() >= 1600) { $('#index-banner').css('min-height', windowHeight); }
@@ -25,7 +34,7 @@ $(document).ready(function () {
             const query = event.target.value;
 
             if (query) {
-                window.location.href = `https://trenditapp.com/booking/?q=${query}`;
+                window.location.href = `${bookingHost}?q=${query}`;
             } else {
                 $('#search-wrap').addClass('shakeX');
                 document.getElementById('search-wrap').addEventListener('animationend', () => {
