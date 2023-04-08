@@ -3175,10 +3175,17 @@ footer a:hover{
     max-width: 508px;
     margin-inline: auto;
     margin-block-start: 24px;
+    display: flex;
+    column-gap: 12px;
 }
 
 .form-group-search > .form-control {
-    height: 45px;
+    height: 50px;
+}
+
+.form-group-search > .btn {
+    min-width: 80px;
+    max-width: 80px;
 }
 
 .animated {
