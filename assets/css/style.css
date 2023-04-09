@@ -3177,15 +3177,28 @@ footer a:hover{
     margin-block-start: 24px;
     display: flex;
     column-gap: 12px;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 .form-group-search > .form-control {
     height: 50px;
+    flex-basis: calc(100% - 80px - 30px);
+    padding-left: 35px;
 }
 
 .form-group-search > .btn {
     min-width: 80px;
     max-width: 80px;
+    flex-basis: 80px;
+}
+
+.form-group-search > .fa {
+    position: absolute;
+    left: 8px;
+    font-size: 22px;
+    top: 14px;
+    color: #969696;
 }
 
 .animated {
@@ -3227,4 +3240,11 @@ footer a:hover{
 .shakeX {
     -webkit-animation-name: shakeX;
     animation-name: shakeX;
+}
+
+.search-info {
+    color: #fff;
+    display: block;
+    text-align: left;
+    margin-top: 8px;
 }
