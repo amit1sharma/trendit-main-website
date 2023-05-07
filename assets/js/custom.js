@@ -53,6 +53,8 @@ $(document).ready(function () {
 
         attemptSearch(query);
     });
+
+    $('.btn-all-providers').attr('href', `${bookingHost}?q=`)
 }); 
 
 
